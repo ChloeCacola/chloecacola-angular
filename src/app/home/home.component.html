@@ -1,0 +1,126 @@
+<h1>Chloe Corrigan</h1>
+<hr style="max-width:85%; border-top: 1px solid #9f9f9f; box-shadow: inset 0px 0px 1px 1px ">
+
+
+<div fxLayout="row wrap" style="margin-top:8%">
+  <!--film/photography-->
+  <div class="nav-image" style="height:325px;margin:0px" (mouseenter)="camHovered()" (mouseleave)="camHovered()">
+      <img src="../../assets/images/camera.png" style="max-width:70%; cursor:pointer"
+           alt="film/photography">
+
+    <div style="position: absolute; margin-left:10%;">
+      <a href="/film">
+        <h3 *ngIf="camImageHovered || screenSizeSmall"
+            [@fadeInOut]>film</h3>
+      </a>
+    </div>
+
+    <div style="position:absolute; margin-top:30px; margin-left:10%">
+      <a href="/photography">
+        <h3
+            *ngIf="camImageHovered || screenSizeSmall"
+           [@fadeInOut]>photography</h3>
+      </a>
+    </div>
+
+  </div>
+  <!--art-->
+  <div class="nav-image">
+    <a href="/art">
+      <img src="../../assets/images/artnav.png" style="max-width:70%" alt="art"
+           (mouseover)="artHovered()" (mouseleave)="artHovered()">
+    </a>
+    <a href="/art">
+      <h3  style="position: absolute; margin-left: 10%;"
+           *ngIf="artImageHovered || screenSizeSmall"
+           [@fadeInOut]>art</h3>
+    </a>
+  </div>
+  <!--web dev-->
+  <div class="nav-image" (mouseenter)="webdevHovered()" (mouseleave)="webdevHovered()">
+    <a href="#">
+      <img src="../../assets/images/webdev2.png" style="max-width:70%" alt="web development">
+    </a>
+    <a href="/websites">
+      <h3 style="position: absolute; margin-left:2%"
+          *ngIf="webdevImageHovered || screenSizeSmall"
+          [@fadeInOut]>websites</h3>
+    </a>
+    <a href="/softwaredev">
+      <h3 style="position: absolute; margin-left:2%; margin-top:50px"
+          *ngIf="webdevImageHovered || screenSizeSmall"
+          [@fadeInOut]>software dev</h3>
+    </a>
+  </div>
+</div>
+
+<div fxLayout="row wrap" style="margin-top:20vw;">
+
+  <!-- .. shows only for mobile displays/small screen .. -->
+  <img src="https://via.placeholder.com/300x200" alt="chloe corrigan"
+       class="display-sm">
+  <!-- .. .. -->
+
+  <div id="get-in-touch-pos">
+    <h2 class="align-right">get in touch</h2>
+    <div id="get-in-touch">
+      <p class="p-content" id="email">
+        <a href="mailto:cscorrigan@icloud.com">cscorrigan@icloud.com</a>
+      </p>
+      <div fxLayout="row" style="text-align:center">
+        <div style="width:25%">
+          <a href="https://www.linkedin.com/in/chloecorrigan/" target="_blank">
+            <img class="socialmedia" src="../../assets/images/linkedinlogo.svg" alt="linkedin" style="max-width:80%">
+          </a>
+        </div>
+
+        <div style="width:25%">
+          <a href="https://github.com/chloecacola" target="_blank">
+            <img class="socialmedia" src="../../assets/images/githublogo.svg" alt="github" style="max-width:80%">
+          </a>
+        </div>
+
+        <div style="width:25%">
+          <a href="https://www.flickr.com/photos/chloecorrigan" target="_blank">
+            <img class="socialmedia" src="../../assets/images/flickrlogo.svg" alt="flickr" style="max-width:80%">
+          </a>
+        </div>
+
+        <div style="width:25%">
+          <a href="https://vimeo.com/chloecorrigan" target="_blank">
+            <img class="socialmedia" src="../../assets/images/vimeologo.svg" alt="vimeo" style="max-width:80%">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="about-pos">
+  <h2>about</h2>
+  <div id="about">
+    <p class="p-content">Welcome to my site!
+      <br>Please check out my other profiles (under 'get in touch') as I finish up here.</p>
+    <!--<p class="p-content">about stuff lalalalalalla; talking bout mee-->
+      <!--hasoidf aspodfihaposdif aspofhiapso.-->
+      <!--pasofihp aposfi fsoi difaohwa eihf oaihasdofihg oasoisdfhfhoihsdoifh aoei fhjai-->
+    <!--aoihfaweo fhoai ahoiahf io fehi ao foh faoei f oahoid foh woih oafi oaihe haof  oa.-->
+    <!--aiuhaoieh .f oaihe fa. afoiehoaf hasofh. afhoeihafldfhaoef;a sfohaoeifh akdf .aafe-->
+    <!--aefjoaiejf aliefj aoeifh a oafeoif aoaehjfio hfoaehf oihf aofi aoieihfoih ofa oeihf a-->
+    <!--faoweihfaoihaoief fhoaeihf oaih oaoa fieh oifh oaie fhoihoaif oaid ohf oihf eohadoifoiae-->
+    <!--aoeihfoai faoiehfoaeh fodi fa oeiiaf oiad foih ohi foaieh oaidfh oifh aeo af aoi feiofha-->
+    <!--aoefihof oaiheoi faoeihf oah fa</p>-->
+    <!--<p style="margin:0 auto; padding:0px 20px 20px 20px">second paraowefih aowpegih apoefih awe fpoiapwef-->
+    <!--aoweifhapoweifha efioafpaih apofeih paoihf apoefhi po faf poahief aef. aowefhp oaihfe .-->
+    <!--aowefihpaoia.f oaeihfoafh aoi aofeih oaih .af oiah efoiah oaf oaeihf oh poaeihf po  aef.-->
+    <!--aoweihfoaihfi afaef oafa.e faofe aopefih paofh aeof and the fox jumped over the moon. aosdfn-->
+    <!--aotieh cow tsaid thanks for that. I was tired. so THen the monkey threw a banana.  and a-->
+    <!--dolfphisdf asdfoiadef.</p>-->
+  </div>
+  </div>
+
+  <img src="https://via.placeholder.com/800x800" alt="chloe corrigan"
+       style="max-height: 95vw; margin:0 auto; padding: 0px"
+       class="display-big">
+
+</div>

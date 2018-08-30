@@ -1,0 +1,164 @@
+
+
+h1 {
+  text-align:center;
+  font-size:7vw;
+  font-weight: normal;
+  margin-bottom:20px;
+}
+
+.nav-image {
+  width:33%;
+  text-align:center;
+}
+
+h2 {
+  margin: 0;
+  font-size:40px;
+}
+
+.display-sm {
+  display: none;
+}
+
+.display-big {
+  display: block;
+}
+
+.socialmedia {
+  height: 40px;
+  width: 40px;
+}
+
+.p-content {
+  padding:20px;
+  text-align:justify;
+  margin:0;
+}
+
+#email {
+  font-size: 20px;
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+#get-in-touch-pos {
+  position:absolute;
+  margin-top: 10%;
+  margin-left: 100%;
+  left:-300px;
+}
+
+#get-in-touch {
+  background-color:#fff;
+  width:300px;
+  height:150px;
+}
+
+#about-pos {
+  position: absolute;
+  margin-top: 25%;
+  left: 2%
+}
+
+#about {
+  max-width: 50vw;
+  background-color: #fff;
+}
+
+//LARGE
+@media screen and (min-width:1020px) {
+h1 {
+  font-size: 70px;
+}
+}
+
+//MEDIUM
+@media screen and (max-width:900px) {
+}
+
+//MED-SMALL
+@media screen and (max-width:800px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size:4.7vw;
+  }
+  #get-in-touch {
+    width:40vw;
+  }
+  #get-in-touch-pos {
+    left: -40vw;
+  }
+}
+
+//SMALL
+@media screen and (max-width:700px) {
+  #email {
+    font-size:18px;
+  }
+}
+
+//IPHONE SE/5
+@media screen and (max-width:568px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .nav-image {
+    width:100%;
+    text-align:center;
+  }
+
+  .display-sm {
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+  }
+
+  .display-big {
+    display: none;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size:30px;
+  }
+
+  #get-in-touch-pos {
+    position: relative;
+    margin: 0 auto;
+    left:0px;
+    width: 100vw;
+  }
+  #get-in-touch {
+    margin: 0 auto;
+    width:100vw;
+  }
+
+  #about-pos {
+    position: relative;
+    margin: 0 auto;
+    left:0px;
+    width: 100vw;
+  }
+  #about {
+    max-width:100%;
+    width: 100vw;
+    margin: 0 auto;
+    left:-10px;
+  }
+
+  #email {
+    font-size: 13px;
+  }
+}
