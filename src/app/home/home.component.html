@@ -1,21 +1,28 @@
-<h1>Chloe Corrigan</h1>
-<hr style="max-width:85%; border-top: 1px solid #9f9f9f; box-shadow: inset 0px 0px 1px 1px ">
+<h1><span style="font-family:'Josefin Sans', sans-serif;">Chloe</span>Corrigan</h1>
+<h3 style="font-family:'Josefin Sans', sans-serif; color: #fff; margin: 0 auto;
+    text-align: center; font-size: 50vw; position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: -1;
+   overflow: hidden;">CC</h3>
 
 
-<div fxLayout="row wrap" style="margin-top:8%">
+<div fxLayout="row wrap" style="margin-top:2%">
   <!--film/photography-->
-  <div class="nav-image" style="height:325px;margin:0px" (mouseenter)="camHovered()" (mouseleave)="camHovered()">
+  <div class="nav-image" style="height:325px;margin:0px; margin-top: 70px;" (mouseenter)="camHovered()" (mouseleave)="camHovered()">
       <img src="../../assets/images/camera.png" style="max-width:70%; cursor:pointer"
            alt="film/photography">
 
-    <div style="position: absolute; margin-left:10%;">
+    <div style="position: absolute; margin-left:10%; margin-top: -6%;">
       <a href="/film">
         <h3 *ngIf="camImageHovered || screenSizeSmall"
             [@fadeInOut]>film</h3>
       </a>
     </div>
 
-    <div style="position:absolute; margin-top:30px; margin-left:10%">
+    <div style="position:absolute; margin-top:30px; margin-left:10%; margin-top: -2%;">
       <a href="/photography">
         <h3
             *ngIf="camImageHovered || screenSizeSmall"
@@ -25,10 +32,10 @@
 
   </div>
   <!--art-->
-  <div class="nav-image">
+  <div class="nav-image" style="height:325px;margin:0px;"
+        (mouseenter)="artHovered()" (mouseleave)="artHovered()">
     <a href="/art">
-      <img src="../../assets/images/artnav.png" style="max-width:70%" alt="art"
-           (mouseover)="artHovered()" (mouseleave)="artHovered()">
+      <img src="../../assets/images/artnav.png" style="max-width:70%" alt="art">
     </a>
     <a href="/art">
       <h3  style="position: absolute; margin-left: 10%;"
@@ -37,24 +44,24 @@
     </a>
   </div>
   <!--web dev-->
-  <div class="nav-image" (mouseenter)="webdevHovered()" (mouseleave)="webdevHovered()">
+  <div class="nav-image" style="height:325px;margin:0px; margin-top: 70px;" (mouseenter)="webdevHovered()" (mouseleave)="webdevHovered()">
     <a href="#">
       <img src="../../assets/images/webdev2.png" style="max-width:70%" alt="web development">
     </a>
     <a href="/websites">
-      <h3 style="position: absolute; margin-left:2%"
+      <h3 style="position: absolute; margin-left:8%; margin-top: -6%; background: #f8f8f6;"
           *ngIf="webdevImageHovered || screenSizeSmall"
           [@fadeInOut]>websites</h3>
     </a>
     <a href="/softwaredev">
-      <h3 style="position: absolute; margin-left:2%; margin-top:50px"
+      <h3 style="position: absolute; margin-left:8%; margin-top: -2%;"
           *ngIf="webdevImageHovered || screenSizeSmall"
           [@fadeInOut]>software dev</h3>
     </a>
   </div>
 </div>
 
-<div fxLayout="row wrap" style="margin-top:20vw;">
+<div fxLayout="row wrap" style="margin-top:7vw;">
 
   <!-- .. shows only for mobile displays/small screen .. -->
   <img src="https://via.placeholder.com/300x200" alt="chloe corrigan"

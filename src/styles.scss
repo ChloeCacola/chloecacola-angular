@@ -1,17 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One|Josefin+Sans:100');
 
-h1, h2 {
+h1 {
+  font-family: 'Nixie One', sans-serif;
+}
+
+h2 {
   font-family: 'Nixie One', cursive;
 }
 
 body {
-  background-color: #fcf8f7;
+  background-color: #f8f8f6;
   color: #393939;
 }
 
 a {
   text-decoration: none;
-  color: #393939;
+  color: #454543;
   font-family: 'Nixie One', cursive;
 }
