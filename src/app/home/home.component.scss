@@ -5,11 +5,9 @@ h1 {
   font-size:7vw;
   font-weight: 100;
   margin-bottom:20px;
+  //margin-top: 10vw;
 }
 
-hr {
-
-}
 
 .nav-image {
   width:33%;
@@ -66,6 +64,10 @@ h2 {
   height:150px;
 }
 
+.quarter-col {
+  width: 25%;
+}
+
 #about-pos {
   position: absolute;
   margin-top: 25%;
@@ -77,18 +79,18 @@ h2 {
   background-color: #fff;
 }
 
-//LARGE
+//LARGE WIDTH
 @media screen and (min-width:1020px) {
 h1 {
   font-size: 70px;
 }
 }
 
-//MEDIUM
+//MEDIUM WIDTH
 @media screen and (max-width:900px) {
 }
 
-//MED-SMALL
+//MED-SMALL WIDTH
 @media screen and (max-width:800px) {
   h1 {
     font-size: 55px;
@@ -104,14 +106,14 @@ h1 {
   }
 }
 
-//SMALL
+//SMALL WIDTH
 @media screen and (max-width:700px) {
   #email {
     font-size:18px;
   }
 }
 
-//IPHONE SE/5
+//XSMALL WIDTH
 @media screen and (max-width:568px) {
 
   h1 {
@@ -142,11 +144,14 @@ h1 {
     position: relative;
     margin: 0 auto;
     left:0px;
-    width: 100vw;
+    max-width: 100%;
+    width: 90vw;
   }
   #get-in-touch {
     margin: 0 auto;
-    width:100vw;
+    max-width: 100%;
+    width:90vw;
+    //background: transparent;
   }
 
   #about-pos {
@@ -156,13 +161,19 @@ h1 {
     width: 100vw;
   }
   #about {
-    max-width:100%;
-    width: 100vw;
+    max-width:90%;
+    width: 90vw;
     margin: 0 auto;
-    left:-10px;
+    right: 0px;
   }
 
   #email {
-    font-size: 13px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-height:500px) {
+  #nav-home {
+    margin-top: 5vw;
   }
 }

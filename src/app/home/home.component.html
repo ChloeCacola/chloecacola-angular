@@ -1,4 +1,6 @@
 <h1><span style="font-family:'Josefin Sans', sans-serif;">Chloe</span>Corrigan</h1>
+
+<!--cc background-->
 <h3 style="font-family:'Josefin Sans', sans-serif; color: #fff; margin: 0 auto;
     text-align: center; font-size: 50vw; position: absolute;
    top: 0;
@@ -9,20 +11,20 @@
    overflow: hidden;">CC</h3>
 
 
-<div fxLayout="row wrap" style="margin-top:2%">
+<div fxLayout="row wrap" id="nav-home">
   <!--film/photography-->
   <div class="nav-image" style="height:325px;margin:0px; margin-top: 70px;" (mouseenter)="camHovered()" (mouseleave)="camHovered()">
       <img src="../../assets/images/camera.png" style="max-width:70%; cursor:pointer"
            alt="film/photography">
 
-    <div style="position: absolute; margin-left:10%; margin-top: -6%;">
+    <div style="position: absolute; margin-left:10%; margin-top: -8%;">
       <a href="/film">
         <h3 *ngIf="camImageHovered || screenSizeSmall"
             [@fadeInOut]>film</h3>
       </a>
     </div>
 
-    <div style="position:absolute; margin-top:30px; margin-left:10%; margin-top: -2%;">
+    <div style="position:absolute; margin-top:30px; margin-left:10%; margin-top: -4%;">
       <a href="/photography">
         <h3
             *ngIf="camImageHovered || screenSizeSmall"
@@ -46,10 +48,10 @@
   <!--web dev-->
   <div class="nav-image" style="height:325px;margin:0px; margin-top: 70px;" (mouseenter)="webdevHovered()" (mouseleave)="webdevHovered()">
     <a href="#">
-      <img src="../../assets/images/webdev2.png" style="max-width:70%" alt="web development">
+      <img src="../../assets/images/helloworld.png" style="max-width:70%" alt="web development">
     </a>
     <a href="/websites">
-      <h3 style="position: absolute; margin-left:8%; margin-top: -6%; background: #f8f8f6;"
+      <h3 style="position: absolute; margin-left:8%; margin-top: -6%;"
           *ngIf="webdevImageHovered || screenSizeSmall"
           [@fadeInOut]>websites</h3>
     </a>
@@ -61,7 +63,7 @@
   </div>
 </div>
 
-<div fxLayout="row wrap" style="margin-top:7vw;">
+<div fxLayout="row wrap" style="margin-top:5vw;">
 
   <!-- .. shows only for mobile displays/small screen .. -->
   <img src="https://via.placeholder.com/300x200" alt="chloe corrigan"
@@ -75,25 +77,25 @@
         <a href="mailto:cscorrigan@icloud.com">cscorrigan@icloud.com</a>
       </p>
       <div fxLayout="row" style="text-align:center">
-        <div style="width:25%">
+        <div class="quarter-col">
           <a href="https://www.linkedin.com/in/chloecorrigan/" target="_blank">
             <img class="socialmedia" src="../../assets/images/linkedinlogo.svg" alt="linkedin" style="max-width:80%">
           </a>
         </div>
 
-        <div style="width:25%">
+        <div class="quarter-col">
           <a href="https://github.com/chloecacola" target="_blank">
             <img class="socialmedia" src="../../assets/images/githublogo.svg" alt="github" style="max-width:80%">
           </a>
         </div>
 
-        <div style="width:25%">
+        <div class="quarter-col">
           <a href="https://www.flickr.com/photos/chloecorrigan" target="_blank">
             <img class="socialmedia" src="../../assets/images/flickrlogo.svg" alt="flickr" style="max-width:80%">
           </a>
         </div>
 
-        <div style="width:25%">
+        <div class="quarter-col">
           <a href="https://vimeo.com/chloecorrigan" target="_blank">
             <img class="socialmedia" src="../../assets/images/vimeologo.svg" alt="vimeo" style="max-width:80%">
           </a>
