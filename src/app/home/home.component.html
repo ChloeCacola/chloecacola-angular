@@ -1,40 +1,21 @@
-<h1><span style="font-family:'Josefin Sans', sans-serif;">Chloe</span>Corrigan</h1>
+<h1>Chloe Corrigan</h1>
 
 <!--cc background-->
-<h3 style="font-family:'Josefin Sans', sans-serif; color: #fff; margin: 0 auto;
-    text-align: center; font-size: 50vw; position: absolute;
+<h3 style="font-family:'Sedgwick Ave Display', sans-serif; color: seashell; margin: 0 auto;
+    text-align: center; font-size: 20vw; position: absolute;
    top: 0;
    left: 0;
    bottom: 0;
    right: 0;
    z-index: -1;
-   overflow: hidden;">CC</h3>
+   overflow: hidden;">CHLOE CORRIGAN</h3>
 
 
-<div fxLayout="row wrap" id="nav-home">
-  <!--film/photography-->
-  <div class="nav-image" style="height:325px;margin:0px; margin-top: 70px;" (mouseenter)="camHovered()" (mouseleave)="camHovered()">
-      <img src="../../assets/images/camera.png" style="max-width:70%; cursor:pointer"
-           alt="film/photography">
+<div id="nav-home">
 
-    <div style="position: absolute; margin-left:10%; margin-top: -8%;">
-      <a href="/film">
-        <h3 *ngIf="camImageHovered || screenSizeSmall"
-            [@fadeInOut]>film</h3>
-      </a>
-    </div>
-
-    <div style="position:absolute; margin-top:30px; margin-left:10%; margin-top: -4%;">
-      <a href="/photography">
-        <h3
-            *ngIf="camImageHovered || screenSizeSmall"
-           [@fadeInOut]>photography</h3>
-      </a>
-    </div>
-
-  </div>
   <!--art-->
-  <div class="nav-image" style="height:325px;margin:0px;"
+  <!-- HIDE UNTIL PORTFOLIO -->
+  <!-- <div class="nav-image" style="height:325px;margin:0px;"
         (mouseenter)="artHovered()" (mouseleave)="artHovered()">
     <a href="/art">
       <img src="../../assets/images/artnav.png" style="max-width:70%" alt="art">
@@ -44,23 +25,51 @@
            *ngIf="artImageHovered || screenSizeSmall"
            [@fadeInOut]>art</h3>
     </a>
-  </div>
+  </div> -->
+
   <!--web dev-->
-  <div class="nav-image" style="height:325px;margin:0px; margin-top: 70px;" (mouseenter)="webdevHovered()" (mouseleave)="webdevHovered()">
+  <div class="nav-image" id="dev" (mouseenter)="webdevHovered()" (mouseleave)="webdevHovered()">
     <a href="#">
-      <img src="../../assets/images/helloworld.png" style="max-width:70%" alt="web development">
+      <img src="../../assets/images/helloworld.png" alt="web development">
     </a>
+    <br/>
+    <!-- websites link -->
     <a href="/websites">
-      <h3 style="position: absolute; margin-left:8%; margin-top: -6%;"
+      <h3 
           *ngIf="webdevImageHovered || screenSizeSmall"
           [@fadeInOut]>websites</h3>
     </a>
+    <br>
+    <span>&nbsp;&nbsp;&nbsp;</span>
+    <!-- software dev link -->
     <a href="/softwaredev">
-      <h3 style="position: absolute; margin-left:8%; margin-top: -2%;"
+      <h3
           *ngIf="webdevImageHovered || screenSizeSmall"
           [@fadeInOut]>software dev</h3>
     </a>
   </div>
+</div>
+
+<!--film/photography-->
+<div class="nav-image" id="film" (mouseenter)="camHovered()" (mouseleave)="camHovered()">
+  <div>
+    <a href="/film">
+      <h3 *ngIf="camImageHovered || screenSizeSmall"
+          [@fadeInOut]>film</h3>
+    </a>
+  </div>
+  <img src="../../assets/images/camera.png" style="cursor:pointer"
+       alt="film/photography">
+
+<!-- HIDE UNTIL NEW ITEMS IN PORTFOLIO -->
+<!-- <div style="position:absolute; margin-top:30px; margin-left:10%; margin-top: -4%;">
+  <a href="/photography">
+    <h3
+        *ngIf="camImageHovered || screenSizeSmall"
+       [@fadeInOut]>photography</h3>
+  </a>
+</div> -->
+
 </div>
 
 <div fxLayout="row wrap" style="margin-top:5vw;">

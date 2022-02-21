@@ -5,6 +5,8 @@ www.chloecorrigan.com
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+Important note: node-sass is deprecated but required for the project to compile successfully.  The version support depends on node version (`node -v`).  See https://www.npmjs.com/package/node-sass for more info.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

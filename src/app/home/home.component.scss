@@ -8,15 +8,28 @@ h1 {
   //margin-top: 10vw;
 }
 
-
 .nav-image {
-  width:33%;
-  text-align:center;
+  align-items: center;
+  display: flex;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.nav-image#dev {
+  justify-content: left;
+  // flex-direction: column; -> if want items under it
+}
+
+.nav-image#film {
+  justify-content: right;
 }
 
 h2 {
   margin: 0;
   font-size:40px;
+}
+
+h3 {
+  margin: 0 auto;
 }
 
 .display-sm {
@@ -81,13 +94,21 @@ h2 {
 
 //LARGE WIDTH
 @media screen and (min-width:1020px) {
-h1 {
-  font-size: 70px;
-}
+  h1 {
+    font-size: 70px;
+  }
+  .nav-image {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 }
 
 //MEDIUM WIDTH
 @media screen and (max-width:900px) {
+  .nav-image {
+    margin-right: 12%;
+    margin-left: 12%;
+  }
 }
 
 //MED-SMALL WIDTH
@@ -104,6 +125,11 @@ h1 {
   #get-in-touch-pos {
     left: -40vw;
   }
+
+  .nav-image {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 
 //SMALL WIDTH
@@ -111,18 +137,29 @@ h1 {
   #email {
     font-size:18px;
   }
+
+  .nav-image {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 
 //XSMALL WIDTH
 @media screen and (max-width:568px) {
 
   h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
-  .nav-image {
-    width:100%;
-    text-align:center;
+  .nav-image#dev {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .nav-image#film {
+    justify-content: center;
+    margin-top: 20px;
+    margin-right:20px;
   }
 
   .display-sm {
